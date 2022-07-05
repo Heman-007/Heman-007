@@ -1,13 +1,13 @@
 public class Student
 {
-    public String name;//String is non primitive
+    public String name;
     private int marks;
 
-    public Student(String studName)//constructor
+    public Student(String studName)
     {
         name=studName;
     }
-    public void setMarks(int studMarks)//setter method syntax
+    public void setMarks(int studMarks)
     {
         marks=studMarks;
     }
