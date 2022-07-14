@@ -1,26 +1,25 @@
-public class Employee
-{
-    int empid;
+public class Employee {
+    int employeeid;
     String name;
-    static String company="Stark Industries";
+    static String company = "Stark Industries";
 
-    Employee(int empid,String name)
+    Employee(int employeeid, String name)
     {
-        this.empid=empid;
-        this.name=name;
+        this.employeeid = employeeid;
+        this.name = name;
 
     }
-    void display()
-    {
-        System.out.println(empid+" "+name+" "+company);
+
+    void display() {
+        System.out.println(employeeid + " " + name + " " + company);
     }
-    public static void main(String args[])
-    {
-        Employee e1=new Employee(10,"Ankit");
+
+    public static void main(String args[]) {
+        Employee e1 = new Employee(10, "Ankit");
         e1.display();
-        Employee e2=new Employee(11,"Himanshu");
+        Employee e2 = new Employee(11, "Himanshu");
         e2.display();
-        Employee e3=new Employee(12,"Abhi");
+        Employee e3 = new Employee(12, "Abhi");
         e3.display();
     }
 
