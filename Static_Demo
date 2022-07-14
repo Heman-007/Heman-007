@@ -1,14 +1,11 @@
-package JavaDay1;
-
-public class StaticDemo
-{
+public class StaticDemo {
     public static void main(String args[])
     {
-        Abc.show();
+        Car.show();
     }
 }
-class Abc
-{
+
+class Car {
     public static void show()
     {
         System.out.println("Hi Program for static method sucessfull");
