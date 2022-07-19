@@ -1,14 +1,19 @@
-package JavaDay1;
+package com.hemantsoft.java;
+
+/**
+ * StaticDemo Class
+ */
 public class StaticDemo {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Car.show();
     }
 }
 
+/**
+ * Car class
+ */
 class Car {
-    public static void show()
-    {
+    public static void show() {
         System.out.println("Hi Program for static method sucessfull");
     }
 }
