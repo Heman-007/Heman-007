@@ -1,15 +1,19 @@
-package JavaDay1;
-
+package com.hemantsoft.java;
+/**
+ * FinalDemo Class
+ */
 public class FinalDemo {
     public static void main(String args[]) {
-        final int i = 8;
+        final int i = 8; //final keyword for showing its function
         i++;
         System.out.println(i);
         Ball obj = new Ball();
         obj.show();
     }
 }
-
+/**
+ * Cricket Class
+ */
 class Cricket {
     public void show() {
 
@@ -17,8 +21,13 @@ class Cricket {
     }
 }
 
+/**
+ * Ball class inheriting from Cricket class
+ */
 class Ball extends Cricket {
     public void show() {
         System.out.println("In a Child");//Method Overridding due to Polymorphism Concept
     }
 }
+
+
