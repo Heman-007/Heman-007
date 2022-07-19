@@ -1,21 +1,34 @@
+package com.hemantsoft.java;
+
+/**
+ *  Parent class
+ */
 class Parent {
-    String s = "Parent variable";
+
+    String s = "Parent variable";//Initializing s variable as parent variable in parent class
 
 }
 
 class Child extends Parent {
-    String s = "Child Variable";
+    String s = "Child Variable";// Initializing s as Child variable in Child class that inherits parent
 
-    public void m1() {
+    public void method1() {
         System.out.println(s);
         System.out.println(this.s);
         System.out.println(super.s);
     }
 }
 
+/**
+ * Test method for calling methods
+ */
 public class Test {
+    /**
+     * @param args Child class
+     */
     public static void main(String[] args) {
-        Child c = new Child();
-        c.m1();
+        Child obj1 = new Child();
+        obj1.method1();
     }
 }
+
