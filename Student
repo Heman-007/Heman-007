@@ -1,17 +1,31 @@
-public class Student {
-    public String name;
-    private int marks;
+package com.hemantsoft.java;
 
+/**
+ * Student class
+ */
+public class Student {
+    public String name; //String is Non primtive data-type
+    private int marks;//private acess specifier used for integer datatype
+
+    /**
+     * @param studentName
+     */
     public Student(String studentName)
     {
         name = studentName;
     }
 
-    public void setMarks(int studentMarks)
+    /**
+     * @param studentMarks
+     */
+    public void setMarks(int studentMarks) //setter method syntax for setting marks
     {
         marks = studentMarks;
     }
 
+    /**
+     * Studentinformation method
+     */
     public void studentInfo()
     {
         System.out.println("Name = " + name);
@@ -19,17 +33,17 @@ public class Student {
     }
 
     public static void main(String[] args) {
-        Student s1 = new Student("Ankit");
+        Student s1 = new Student("Ankit"); //Initializing value to methods through main method
         Student s2 = new Student("Hemant");
         Student s3 = new Student("Fatman");
         Student s4 = new Student("Shrivalli");
 
-        s1.setMarks(98);
+        s1.setMarks(98);//calling the setter nethod with object for setting Marks
         s2.setMarks(100);
         s3.setMarks(65);
         s4.setMarks(50);
 
-        s1.studentInfo();
+        s1.studentInfo();//method calling via object for printing information of student
         s2.studentInfo();
         s3.studentInfo();
         s4.studentInfo();
@@ -39,3 +53,4 @@ public class Student {
 
 
 }
+
